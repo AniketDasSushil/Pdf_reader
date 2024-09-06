@@ -1,0 +1,119 @@
+{
+  "Number Of Shares Offered By The Company": [
+    "stock offered by us",
+    "shares offered by us",
+    "Number of securities issued",
+    "Number of shares issued",
+    "fresh issue",
+    "being offered",
+    "Issue Shares"
+  ],
+  "Number Of Shares Offered By Selling Shareholders": [
+    "selling shareholder",
+    "selling stockholder",
+    "Offer for Sale",
+    "allotment by shareholder",
+    "offered by our Selling Shareholder"
+  ],
+  "Number Of Shares Over Allotted By The Company To The Underwriters": [
+    "over-allotment",
+    "over-allotment Option",
+    "option to purchase"
+  ],
+  "Number Of Shares Over Allotted By Selling Shareholders To The Underwriters": [
+    "(Offering by way of over-allotment)"
+  ],
+  "Number Of Shares Offered By The Company With Over-Allottment Option": [
+    "over-allotment option is exercised in full",
+    "exercise of the underwriters' over-allotment option",
+    "if the underwriters exercise the over-allotment option"
+  ],
+  "Number of shares offered by the Selling Shareholders with Over-Allotment Option": [],
+  "Offer Price Per Share": [
+    "estimated initial public offering price",
+    "estimated offering price",
+    "offer price",
+    "IPO price",
+    "per Offer Share",
+    "initial public offering price"
+  ],
+  "Min. Offer Price Per Share": [
+    "Offer Price range",
+    "mid-point",
+    "low-end of the Offer Price"
+  ],
+  "Max. Offer Price Per Share": [
+    "high-end of the Offer Price range",
+    "mid-point"
+  ],
+  "Gross Proceeds to the Company": [
+    "raise gross proceed",
+    "Public Issue is expected to raise gross proceed",
+    "gross proceeds of "
+  ],
+  "Gross Proceeds to Selling Shareholders": [
+    "offer for sale",
+    "gross proceeds from the Offer for Sale"
+  ],
+  "Gross Proceeds To The Company With Over-Allotment": [
+    "Over-Allotment Option Exercised",
+    "Total With Over-Allotment Option",
+    "Gross Proceeds",
+    "Underwriter exercises the Over-Allotment Option in full"
+  ],
+  "Underwriting Commision Per Share": [
+    "Underwriting Discount",
+    "Agent's Commission"
+  ],
+  "Underwriting Commision % ": [
+    "Underwriting Discount",
+    "cash commission",
+    "(7%)",
+    "(8%)",
+    "(6.5)"
+  ],
+  "Underwriting Commision On The Shares Offered By Company": [
+    "Underwriting discounts and commissions",
+    "Underwriting Discount"
+  ],
+  "Underwriting Commision On Shares Offered By Company With Over Allotment Option": [
+    "Full exercise",
+    "Underwriting discounts and commissions"
+  ],
+  "Underwriting Commision On Shares Offered By Selling Shareholders With Over Allotment Option": [
+    
+  ],
+  "Net Proceeds To The Company": [
+    "net proceeds from the Global Offering",
+    "net proceeds of approximately",
+    "net proceeds to us"
+  ],
+  "Net Proceeds To Selling Shareholders": [
+    
+  ],
+  "Net Proceeds To The Company With Over Allotment Option": [
+    "million if the underwriters exercise their over-allotment option in full"
+  ],
+  "Net Proceeds To Selling Shareholders With Over Allotment Option": [
+    "over-allotment option is exercised in full"
+  ],
+  "IPO Transaction Fees": [
+    "Estimated listing expenses",
+    "listing expenses",
+    "Issue Expense",
+    "Miscellaneous"
+  ],
+  "Maximum Lock-Up Period": [
+    "locked-in",
+    "lock-in",
+    "lock-up"
+  ],
+  "Early Lock Up Period": [
+    "lock-up agreement",
+    "Lock-in of Equity Shares Allotted to Anchor Investors",
+    "lock-up"
+  ],
+  "Lock-Up Relaxation Conditions": [
+    "rule 144"
+  ]
+}
