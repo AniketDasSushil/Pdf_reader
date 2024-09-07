@@ -67,10 +67,8 @@ def create_results_dataframe(results):
         })
     return pd.DataFrame(df_data)
 
-def highlight_search_terms(row):
-    if row['Total Occurrences'] > 0:
-        return ['background-color: yellow'] * len(row)
-    return [''] * len(row)
+def highlight_search_terms(s):
+    return ['background-color: yellow' if s.name == 'Search Term' and s['Total Occurrences'] > 0 else '' for _ in s]
 
 def main():
     set_page_config()
