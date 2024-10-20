@@ -67,8 +67,7 @@ def create_results_dataframe(results):
         })
     return pd.DataFrame(df_data)
 
-def highlight_search_terms(s):
-    return ['background-color: yellow' if s.name == 'Search Term' and s['Total Occurrences'] > 0 else '' for _ in s]
+
 
 def main():
     set_page_config()
@@ -98,7 +97,7 @@ def main():
                 st.subheader("Search Results:")
                 st.dataframe(
                     df.style.apply(highlight_search_terms, axis=1)
-                        .highlight_max(axis=0, subset=['Total Occurrences']),
+                        
                     use_container_width=True
                 )
                 
