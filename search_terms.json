@@ -52,17 +52,24 @@
     "offer price",
     "IPO price",
     "per Offer Share",
-    "initial public offering price"
+    "initial public offering price",
+    "ISSUE PRICE of"
   ],
   
   "Min. Offer Price Per Share": [
     "Offer Price range",
     "mid-point",
-    "low-end of the Offer Price"
+    "low-end of the Offer Price",
+    "price band",
+    "price range",
+    "lower end of the Price Band",
+    "lower end of"
   ],
   "Max. Offer Price Per Share": [
     "high-end of the Offer Price range",
-    "mid-point"
+    "mid-point",
+    "higher end of the Price Band",
+    "higher end of"
   ],
 
 
@@ -76,13 +83,20 @@
     "offer for sale",
     "gross proceeds from the Offer for Sale"
   ],
+  "Total Gross Proceeds Raised In IPO":[
+
+  ],
+
   "Gross Proceeds To The Company With Over-Allotment": [
     "Over-Allotment Option Exercised",
     "Total With Over-Allotment Option",
     "Gross Proceeds",
     "Underwriter exercises the Over-Allotment Option in full"
   ],
-
+  "Gross Proceeds To Selling Shareholders With Over-Allotment":
+  [],
+  "Total Gross Proceeds Raised In IPO With Over-Allottment":
+  [],
 
 
   "Underwriting Commision Per Share": [
@@ -100,16 +114,24 @@
     "Underwriting discounts and commissions",
     "Underwriting Discount"
   ],
+  "Underwriting Commision On Shares Offered By Selling Shareholders":
+  [],
+  
+  "Total Underwriting Commission":[
+
+  ],
+  
   "Underwriting Commision On Shares Offered By Company With Over Allotment Option": [
     "Full exercise",
     "Underwriting discounts and commissions"
   ],
+  
   "Underwriting Commision On Shares Offered By Selling Shareholders With Over Allotment Option": [
     
   ],
-  "Total Underwriting Commission":[
 
-  ],
+  "Total Underwriting Commission With Over Allotment Option":
+  [],
 
 
   "Net Proceeds To The Company": [
@@ -136,7 +158,8 @@
     "Estimated listing expenses",
     "listing expenses",
     "Issue Expense",
-    "Miscellaneous"
+    "Miscellaneous",
+    "Issue related expenses"
   ],
 
   
