@@ -95,11 +95,7 @@ def main():
                 df = create_results_dataframe(results)
                 
                 st.subheader("Search Results:")
-                st.dataframe(
-                    df.style.apply(highlight_search_terms, axis=1)
-                        
-                    use_container_width=True
-                )
+                
                 
                 total_occurrences = df['Total Occurrences'].sum()
                 st.metric("Total Occurrences", total_occurrences)
