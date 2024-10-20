@@ -5,6 +5,7 @@ import pandas as pd
 from collections import defaultdict
 import json
 from bs4 import BeautifulSoup
+import string
 
 def set_page_config():
     st.set_page_config(
@@ -56,14 +57,33 @@ def search_keywords(content, search_terms):
     
     return results
 
-def create_results_dataframe(results):
+def excel_style_column(n):
+    """Convert a number to Excel-style column name."""
+    result = ""
+    while n > 0:
+        n, remainder = divmod(n - 1, 26)
+        result = chr(65 + remainder) + result
+    return result
+
+def create_results_dataframe(results, search_terms):
     df_data = []
-    for main_term, term_counts in results.items():
+    for index, (main_term, substrings) in enumerate(search_terms.items(), start=1):
+        term_counts = results.get(main_term, {})
         total_count = sum(term_counts.values())
+        
+        # Create a list of substrings that have matches
+        substring_results = [f"{substring}: {count}" for substring, count in term_counts.items() if count > 0]
+        
+        substrings_display = ', '.join(substring_results) if substring_results else "No matches found"
+        
+        # Generate Excel-style column index
+        alpha_index = excel_style_column(index)
+        
         df_data.append({
-            'Search Term': main_term,
-            'Total Occurrences': total_count,
-            'Details': ', '.join([f"{term}: {count}" for term, count in term_counts.items() if count > 0])
+            'Index': alpha_index,
+            'IPO Datapoint': main_term,
+            'Total Matches': total_count,
+            'Matched Substrings': substrings_display
         })
     return pd.DataFrame(df_data)
 
@@ -73,6 +93,10 @@ def main():
     st.title("🔍 Advanced PDF/HTML Keyword Search")
     
     SEARCH_TERMS = load_search_terms()
+    
+    if SEARCH_TERMS is None:
+        st.error("Failed to load search terms. Please check your search_terms.json file.")
+        return
     
     uploaded_file = st.file_uploader("Choose a PDF or HTML file", type=["pdf", "html"])
     
@@ -90,12 +114,15 @@ def main():
                 st.success("File successfully read and analyzed!")
                 
                 results = search_keywords(content, SEARCH_TERMS)
-                df = create_results_dataframe(results)
+                df = create_results_dataframe(results, SEARCH_TERMS)
                 
                 st.subheader("Search Results:")
                 
+                # Display the table
+                st.table(df.set_index('Index'))
                 
-                total_occurrences = df['Total Occurrences'].sum()
+                # Calculate and display total occurrences
+                total_occurrences = df['Total Matches'].sum()
                 st.metric("Total Occurrences", total_occurrences)
 
 if __name__ == "__main__":
