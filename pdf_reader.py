@@ -67,8 +67,6 @@ def create_results_dataframe(results):
         })
     return pd.DataFrame(df_data)
 
-
-
 def main():
     set_page_config()
     
